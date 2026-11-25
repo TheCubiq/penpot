@@ -57,31 +57,6 @@ on:
         required: false
         default: 'https://localhost:3449'
 
-  pull_request:
-    paths:
-      - 'frontend/**'
-      - 'common/**'
-      - 'render-wasm/**'
-      - 'plugins/**'
-      - '.github/workflows/tests-e2e.yml'
-
-    types:
-      - opened
-      - synchronize
-      - ready_for_review
-
-  push:
-    branches:
-      - develop
-      - staging
-
-    paths:
-      - 'frontend/**'
-      - 'common/**'
-      - 'render-wasm/**'
-      - 'plugins/**'
-      - '.github/workflows/tests-e2e.yml'
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || inputs.gh_ref || github.ref }}
   cancel-in-progress: true

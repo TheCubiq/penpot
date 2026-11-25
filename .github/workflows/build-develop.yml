@@ -11,8 +11,6 @@ on:
         type: boolean
         required: false
         default: false
-  schedule:
-    - cron: '16 5-20 * * 1-5'
 
 concurrency:
   group: ${{ github.workflow }}

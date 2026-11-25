@@ -1,14 +1,6 @@
 name: Plugins/packages deployer
 
 on:
-  push:
-    branches:
-      - develop
-      - staging
-      - main
-    paths:
-      - 'plugins/apps/*-plugin/**'
-      - 'libs/plugins-styles/**'
   workflow_dispatch:
     inputs:
       gh_ref:

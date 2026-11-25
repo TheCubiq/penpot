@@ -7,23 +7,6 @@ name: "CI: Workflows"
 #   credential persistence, ...). Configured in .github/zizmor.yml.
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - '.github/workflows/**'
-      - '.github/actions/**'
-      - '.github/actionlint.yaml'
-      - '.github/zizmor.yml'
-  push:
-    branches:
-      - develop
-      - staging
-      - main
-    paths:
-      - '.github/workflows/**'
-      - '.github/actions/**'
-      - '.github/actionlint.yaml'
-      - '.github/zizmor.yml'
   workflow_dispatch:
 
 concurrency:

@@ -5,9 +5,7 @@ name: Renovate Docker Image Check
 # from a fork must never be able to start them. Only users with write
 # access can push here.
 on:
-  push:
-    branches:
-      - 'renovate-*'
+  workflow_dispatch:
 
 permissions: {}
 

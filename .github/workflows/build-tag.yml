@@ -11,9 +11,6 @@ on:
         type: boolean
         required: false
         default: false
-  push:
-    tags:
-      - '*'
 
 # Keyed by ref and never cancelling: pushing 2.17.2 shortly after 2.17.2-RC1
 # must not abort the release already in flight.
